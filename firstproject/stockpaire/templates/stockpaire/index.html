@@ -1,0 +1,15 @@
+{% extends "stockpaire/main.html" %}
+{% block title %}
+Accueil
+{% endblock %}
+{% block content %}
+
+<h1> Binevnue sur la page de garde</h1>
+
+<ol>
+    {% for l in liste %}
+    <li class="tableau">{{l}} <a href="/stockpaire/delete/{{l.id}}">Supprimer</a> <a href="/stockpaire/update/{{l.id}}">update</a> <a href="/stockpaire/affiche/{{l.id}}">affiche</a></li>
+    {%endfor%}
+</ol>
+
+{% endblock %}
