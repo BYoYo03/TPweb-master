@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
   {% load static %}
-  <link rel="stylesheet" href="{%static 'main.css' %}" type="text/css">
+  <link rel="stylesheet" href="{%static 'medias/main.css' %}" type="text/css">
 </head>
 <body>
-<nav> <a href="/stockpaire/home">Accueil</a><a href="/stockpaire/ajoutpaire">Ajouter une paire</a></nav>
+<nav> <a class="nav1" href="/stockpaire/home">Accueil</a><a class="nav2" href="/stockpaire/ajoutpaire">Ajouter une paire</a><a class="nav3" href="/stockpaire/ajoutcouleur">Ajouter d'autres coloris</a></nav>
 {% block content %}
 {% endblock %}
 </body>
